@@ -1,0 +1,22 @@
+[project]
+name = "heic2jpeg"
+version = "0.1.0"
+description = "A simple HEIC to JPEG batch converter"
+authors = [
+    { name="Yizhe Zhan", email="yizhe.git@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["heic", "jpeg", "converter", "image", "photo"]
+license = { text = "Apache" }
+
+dependencies = [
+    "pillow",
+    "pillow-heif",
+]
+
+[project.urls]
+Homepage = "https://github.com/yzhan-met/heic2jpeg"
+
+[project.scripts]
+heic2jpeg = "heic2jpeg.cli:main"
